@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Infantil de línguas - Cursos e Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+    <img src="https://images.vexels.com/media/users/3/224234/isolated/preview/ff7c525c1c3e1bef640644542001e1fd-logotipo-da-escola-online.png"
+        alt="imagem escola" width="200px" height="200px">
+</head>
+
+<body>
+
+
+    <h1>Cursos Disponíveis</h1>
+    <ul>
+        <li>
+            <strong>Nome do Curso:</strong> Espanhol<br>
+            <strong>Descrição:</strong> curso voltado para o ensinamento da língua espanhola<br>
+            <strong>Turno/Horário:</strong> Segundas e Quartas, 10:00 - 12:00<br>
+            <strong>Professores:</strong> Gustavo e Genji<br>
+            <strong>Valor:</strong> R$ 200,00<br>
+            <a href="inscricao.html?codigo_curso=1">Inscrever-se</a>
+        </li>
+        <li>
+            <strong>Nome do Curso:</strong> Alemão<br>
+            <strong>Descrição:</strong> curso voltado para o ensinamento da língua Alemã<br>
+            <strong>Turno/Horário:</strong> Terças e Quintas, 14:00 - 16:00<br>
+            <strong>Professores:</strong> Gabriel e Fabio<br>
+            <strong>Valor:</strong> R$ 250,00<br>
+            <a href="inscricao.html?codigo_curso=2">Inscrever-se</a>
+        </li>
+
+    </ul>
+
+
+
+    <h2>Inscrição</h2>
+    <form action="https://660f423f356b87a55c51085d.mockapi.io/api/v2/:endpoint" method="post">
+        <input type="hidden" name="codigo_curso" value="">
+
+        <h3>Dados do Aluno</h3>
+        <label for="nome_aluno">Nome*:</label>
+        <input type="text" id="nome_aluno" name="nome_aluno" required><br>
+        <label for="endereco_aluno">Endereço:</label>
+        <input type="text" id="endereco_aluno" name="endereco_aluno"><br>
+        <label for="bairro_aluno">Bairro:</label>
+        <input type="text" id="bairro_aluno" name="bairro_aluno"><br>
+        <label for="cidade_aluno">Cidade:</label>
+        <input type="text" id="cidade_aluno" name="cidade_aluno"><br>
+        <label for="numero_aluno">Número:</label>
+        <input type="text" id="numero_aluno" name="numero_aluno"><br>
+        <label for="cep_aluno">CEP:</label>
+        <input type="text" id="cep_aluno" name="cep_aluno"><br>
+        <label for="complemento_aluno">Complemento:</label>
+        <input type="text" id="complemento_aluno" name="complemento_aluno"><br>
+        <label for="estado_aluno">Estado:</label>
+        <input type="text" id="estado_aluno" name="estado_aluno"><br>
+        <label for="telefone_aluno">Telefone:</label>
+        <input type="text" id="telefone_aluno" name="telefone_aluno"><br>
+        <label for="celular_aluno">Celular*:</label>
+        <input type="text" id="celular_aluno" name="celular_aluno" required><br>
+        <label for="email_aluno">E-mail*:</label>
+        <input type="email" id="email_aluno" name="email_aluno" required><br>
+        <label for="cor_aluno">Cor*:</label>
+        <select id="cor_aluno" name="cor_aluno" required>
+            <option value="Branca">Branca</option>
+            <option value="Preta">Preta</option>
+            <option value="Parda">Parda</option>
+            <option value="Amarela">Amarela</option>
+            <option value="Indígena">Indígena</option>
+        </select><br>
+
+
+        <h3>Dados do Pai</h3>
+        <label for="nome_pai">Nome*:</label>
+        <input type="text" id="nome_pai" name="nome_pai" required><br>
+        <label for="data_nascimento_pai">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento_pai" name="data_nascimento_pai"><br>
+        <label for="naturalidade_pai">Naturalidade:</label>
+        <input type="text" id="naturalidade_pai" name="naturalidade_pai"><br>
+        <label for="instrucao_pai">Instrução:</label>
+        <input type="text" id="instrucao_pai" name="instrucao_pai"><br>
+        <label for="profissao_pai">Profissão:</label>
+        <input type="text" id="profissao_pai" name="profissao_pai"><br>
+        <label for="celular_pai">Celular*:</label>
+        <input type="text" id="celular_pai" name="celular_pai" required><br>
+        <label for="email_pai">E-mail*:</label>
+        <input type="email" id="email_pai" name="email_pai" required><br>
+        <label for="cpf_pai">CPF*:</label>
+        <input type="text" id="cpf_pai" name="cpf_pai" required><br>
+        <label for="responsavel_financeiro_pai">Responsável Financeiro:</label>
+        <input type="checkbox" id="responsavel_financeiro_pai" name="responsavel_financeiro_pai"><br>
+
+        <h2>Dados da Mãe</h2>
+        <label for="nome_mae">Nome da Mãe*</label>
+        <input type="text" id="nome_mae" name="nome_mae" required><br>
+
+        <label for="data_nascimento_mae">Data de Nascimento*</label>
+        <input type="date" id="data_nascimento_mae" name="data_nascimento_mae" required><br>
+
+        <label for="naturalidade_mae">Naturalidade</label>
+        <input type="text" id="naturalidade_mae" name="naturalidade_mae"><br>
+
+        <label for="instrucao_mae">Instrução</label>
+        <input type="text" id="instrucao_mae" name="instrucao_mae"><br>
+
+        <label for="profissao_mae">Profissão</label>
+        <input type="text" id="profissao_mae" name="profissao_mae"><br>
+
+        <label for="celular_mae">Celular*</label>
+        <input type="tel" id="celular_mae" name="celular_mae" required><br>
+
+        <label for="email_mae">Email*</label>
+        <input type="email" id="email_mae" name="email_mae" required><br>
+
+        <label for="cpf_mae">CPF*</label>
+        <input type="text" id="cpf_mae" name="cpf_mae" required><br>
+
+        <label for="responsavel_financeiro"> Responsável Financeiro?</label>
+        <select id="responsavel_financeiro" name="responsavel_financeiro">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select><br>
+
+
+        <h2>Dados do Curso</h2>
+        <label for="nome_curso">Nome do Curso Escolhido*</label>
+        <input type="text" id="nome_curso" name="nome_curso" required><br>
+
+        <label for="data_ingresso">Data de Ingresso*</label>
+        <input type="date" id="data_ingresso" name="data_ingresso" required><br>
+
+        <label for="valor_curso">Valor*</label>
+        <input type="text" id="valor_curso" name="valor_curso" required><br>
+
+        <label for="forma_pagamento">Forma de Pagamento (Quantidade de Parcelas)*</label>
+        <input type="number" id="forma_pagamento" name="forma_pagamento" required><br>
+
+        <input type="hidden" id="codigo_curso" name="codigo_curso">
+
+        <input type="submit" value="Enviar Inscrição">
+    </form>
+
+</body>
+
+</html>
